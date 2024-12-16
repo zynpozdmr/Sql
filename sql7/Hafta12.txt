@@ -1,0 +1,49 @@
+> Öğrencilerin bölümleri bölümler tablosundan gelecek şekilde öğrenci ad, soyad ve bölüm bilgisini döndüren sorgu
+
+Select * from Bolumler Inner Join Ogrenci
+ON Ogrenci.BolumID = Bolumler.BolumID
+
+
+> Tabloları Left ve Right Join ile birleştiriniz
+
+Select * from Bolumler Left Join Ogrenci
+ON Ogrenci.BolumID = Bolumler.BolumID
+
+Select * from Bolumler Right Join Ogrenci
+ON Ogrenci.BolumID = Bolumler.BolumID
+
+
+> Her Bölümün not ortalamasını veren sorgu
+
+Select Bolumler.BolumAdi, AVG(GNO) from Bolumler 
+Inner Join Ogrenci ON Ogrenci.BolumID = Bolumler.BolumID
+Group by Bolumler.BolumAdi
+
+
+> Her Bölümün öğrenci sayısını veren sorgu
+
+Select Bolumler.BolumAdi, Count(Ogr_no) from Bolumler 
+Inner Join Ogrenci ON Ogrenci.BolumID = Bolumler.BolumID
+group by Bolumler.BolumAdi
+
+
+> Not ortalaması 2'nin altında öğrencisi olan bölümleri ve öğrenci sayılarını getiren sorgu
+
+Select Bolumler.BolumAdi, Count(Ogr_no) from Bolumler 
+Inner Join Ogrenci ON Ogrenci.BolumID = Bolumler.BolumID
+where GNO <2
+group by Bolumler.BolumAdi
+
+
+> Mimarlıkta okuyan öğrenciyi silin
+
+Delete Ogrenci from Ogrenci
+Inner join Bolumler ON Ogrenci.BolumID = Bolumler.BolumID
+Where Bolumler.BolumAdi = 'Mimarlık'
+
+
+> Bilgisayar Mühendisliği bölümünde olan tüm öğrencilerin mail adresini değiştiren sorgu
+
+UPDATE Ogrenci SET Eposta='null@mail.com'
+From Ogrenci Inner join Bolumler ON Ogrenci.BolumID = Bolumler.BolumID
+where Bolumler.BolumAdi = 'Bilgisayar Mühendisliği'

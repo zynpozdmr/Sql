@@ -1,0 +1,23 @@
+Per_ID:Ad:Soyad:Gorev:Departman:Maas
+7369:Smith:OConnell:Memur:Araþtýrma:800
+7499:Allen:Grant:Satýþ Elemaný:Satýþ:1600
+7521:Ward:Hartstein:Satýþ Elemaný:Araþtýrma:1250
+7566:Jones:Fay:Yönetici:Operasyon:2975
+7654:Martin:Patel:Satýþ Elemaný:Satýþ:1250
+7698:Blake:Mavris:Yönetici:Satýþ:2850
+7782:Clark:Baer:Yönetici:Operasyon:2450
+7788:Scott:Higgins:Analist:Araþtýrma:3500
+7839:King:Gietz:Satýþ Elemaný:Araþtýrma:5700
+7844:Turner:Hunold:Satýþ Elemaný:Operasyon:1500
+7876:Adams:Ernst:Memur:Operasyon:1100
+7900:James:Vollman:Memur:Araþtýrma:950
+7902:Ford:Mourgos:Analist:Araþtýrma:3000
+7934:Miller:Nayer:Memur:Satýþ:1300
+7938:Douglas:Atkinson:Yönetici:Satýþ:3200
+7942:Bruce:Tobias:Pazarlama:Satýþ:5700
+7946:Lex:De Haan:Pazarlama:Satýþ:5900
+7950:Nancy:Greenberg:Pazarlama:Operasyon:6500
+7954:Diana:Lorentz:Analist:Araþtýrma:5500
+7958:Valli:Pataballa:Pazarlama:Satýþ:6200
+7962:Ismael:Sciarra:Analist:Operasyon:5000
+7966:Karen:Colmenares:Analist:Operasyon:4000

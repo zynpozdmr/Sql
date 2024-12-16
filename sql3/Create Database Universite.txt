@@ -1,0 +1,113 @@
+>Üniversite isminde bir veritabanı oluşturun
+
+Create Database Universite
+
+
+>Ogrenciler isminde bir tablo oluşturun
+
+use Universite
+
+CREATE TABLE Ogrenciler(
+ogr_no int NOT NULL,
+Ad varchar(25),
+Soyad varchar(25),
+Bolum varchar(25))
+
+
+>Ogrenciler tablosundaki ogr_no sütununa birincil anahtar özelliği ekleyiniz.
+
+ALTER TABLE Ogrenciler
+ADD PRIMARY KEY (ogr_no)
+
+
+>Öğrenciler tablosundan Bolum sütununu siliniz
+
+ALTER TABLE Ogrenciler
+DROP COLUMN Bolum
+
+
+>Öğrenciler tablosunu siliniz
+
+DROP TABLE Ogrenciler
+
+
+>Universite veritabanını Siliniz
+
+DROP DATABASE Universite
+
+
+>Ogrenci tablosundaki tüm kayıtları listeleyiniz
+
+Select * from Ogrenci
+
+
+>Ogrenci tablosundan OgrNo’su 5’ten büyük olan kayıtları listeleyin
+
+Select * from Ogrenci where OgrNo>5
+
+
+> Ogrenci tablosundan; İsminde i harfi geçenler
+
+SELECT * FROM Ogrenci WHERE OgrAd LIKE '%i%'
+
+
+>İsminin herhangi bir yerinde "en" bulunan öğrenciler
+
+SELECT * FROM Ogrenci WHERE OgrAd LIKE '%en%'
+
+
+>Email adresinde '@' karakteri bulunmayan öğrenciler
+
+SELECT * FROM Ogrenci WHERE Email Not LIKE '%@%'
+
+
+>BolumID'si 5 karaktersen oluşan ve 3. karakteri 20 ile başlayan öğrenciler
+
+SELECT * FROM Ogrenci WHERE BolumID LIKE '__20_'
+
+
+>Öğrencilerin hangi bölümlerde olduğunu listeleyiniz (Öğrenci ve Bölüm tablolarını birleştiriniz)
+
+Select * from Ogrenci, Bolum where Ogrenci.BolumID=Bolum.BolumID
+
+>Öğrenci Numarası 9, adı Ali Kaya, mail adresi akaya@mail.com ve bolum kodu YMM101 olan kaydı ekleyiniz
+
+Insert Into Ogrenci Values(9, 'Ali Kaya', 'akaya@mail.com', 'YMM101')
+
+
+
+> Öğrenci numarası 9 olan kaydın e-mail adresini "ak@mail.com" ve bolumID'sini 'ELK103' olarak güncelleyiniz
+
+UPDATE Ogrenci SET Email='ak@mail.com', BolumID= 'ELK103' WHERE OgrNo = 9
+
+
+>Ogrenci tablosunda tüm mail adreslerini ‘deneme@mail.com’ olarak güncelleyiniz.
+
+UPDATE Ogrenci SET Email='deneme@mail.com'
+
+>Öğrenci tablosunun içindeki tüm kayıtları siliniz
+
+DELETE FROM Ogrenci
+
+>Öğrenci tablosunu siliniz
+
+Drop Table Ogrenci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

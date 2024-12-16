@@ -1,0 +1,14 @@
+Ogr_no;Ad;Soyad;Eposta;BolumID;GNO
+1;Ece;Ayhan;eayhan@mail.com;1;2.23
+12;Kübra;Aydemir;kdmr@mail.com;3;3.41
+17;Ali;Kaya;akaya@mail.com;1;2.049
+19;Yiðit;Alpay;yalpay@mail.com;1;1.16
+2;Ayþe;Iþýk;ays23@mail.com;3;2.08
+20;Eda;Çetin;eozturk@mail.com;2;2.54
+21;Yücel;Ak;yucel@mail.com;1;3.68
+22;Orhan;Ok;orhn@mail.com;2;2.75
+23;Yavuz;Erdem;erdem@mail.com;3;2
+24;Ada;Tekin;atekin@mail.com;1;2.91
+25;Melike;Ayaz;mayaz@mail.com;4;2.06
+3;Mehmet;Kara;mkara0@mail.com;2;3.04
+5;Arda;Doðan;adogan@mail.com;2;3.04

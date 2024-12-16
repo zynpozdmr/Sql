@@ -1,0 +1,7 @@
+BolumID;BolumAdi
+1;Bilgisayar Mühendisliði
+2;Elektrik Elektronik
+3;Yazýlým Mühendisliði
+4;Mimarlýk
+5;Ýnþaat Mühendisliði
+6;Gýda Mühendisliði
